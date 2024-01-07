@@ -1,0 +1,311 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Logo Animation</title>
+  <style>
+    body {
+      background-color: black;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    #logo-container {
+      position: relative;
+      text-align: center;
+    }
+
+    #logo {
+      width: 10px;
+      height: 10px;
+      background-color: #3498db;
+      border-radius: 50%;
+      transition: transform 3.0s ease-in-out;
+    }
+
+    #text {
+      position: absolute;
+      top: 50%;
+      left: 210px;
+      transform: translateY(-20%);
+      opacity: 0;
+      font-size: 20px;
+      transition: opacity 5.0s ease-in-out;
+    }
+
+    #logo-container.minimized #logo {
+      transform: scale(0.5) translateX(-30px);
+    }
+
+    #logo-container.minimized #text {
+      opacity: 1;
+    }
+    @keyframes minimize {
+      0% {
+        transform: scale(0.5) translateX(-30px);
+      }
+      100% {
+        transform: scale(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="logo-container">
+    <div id="logo">
+      <img src="C:\Users\ADMIN\Downloads\download.png" alt="im">
+    </div>
+    <div id="text" style="color: beige;">Hello, World!</div>
+  </div>
+
+  <script>
+    const logoContainer = document.getElementById('logo-container');
+
+    // Add event listener to toggle 'minimized' class on click
+    logoContainer.addEventListener("click", function() {
+      this.classList.add('minimized');
+    });
+  </script>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animated Logo</title>
+  <style>
+    body {
+      overflow: hidden;
+      margin: 0;
+    }
+
+    #logo {
+      position: absolute;
+      top: 50%;
+      right: 30%;
+      left: 100%;
+      bottom: 50%;
+      transform: translate(70%, 70%);
+      width: 100px;
+      height: 100px;
+      background-color: #3498db;
+      border-radius: 50%;
+      animation: moveLogo 10s forwards;
+    }
+
+    @keyframes moveLogo {
+      0% {
+        left: 50%;
+      }
+      100% {
+        left: 0;
+        right: 30%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="logo"></div>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Logo Animation</title>
+  <style>
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      overflow: hidden; /* Hide horizontal scrollbar during animation */
+    }
+
+    #logo {
+      width: 100px;
+      height: 100px;
+      background-color: #3498db;
+      border-radius: 50%;
+      position: absolute;
+      animation: zoomAndMove 7s ease-in-out forwards;
+    }
+
+    @keyframes zoomAndMove {
+      0% {
+        transform: scale(1) translateX(0);
+      }
+      50% {
+        transform: scale(0.5) translateX(0);
+      }
+      100% {
+        transform: scale(0.5) translateX(-100%);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="logo"></div>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Logo Animation</title>
+  <style>
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      overflow: hidden; /* Hide horizontal scrollbar during animation */
+    }
+
+    #logo {
+      width: 100px;
+      height: 100px;
+      background-color: #3498db;
+      border-radius: 50%;
+      position: absolute;
+      animation: zoomAndMove 10s ease-in-out forwards;
+    }
+    #text {
+      position: absolute;
+      top: 50%;
+      left: 120px;
+      transform: translateY(-50%);
+      opacity: 0;
+      font-size: 20px;
+      transition: opacity 0.5s ease-in-out;
+    }
+
+    @keyframes zoomAndMove {
+      0% {
+        transform: scale(1) translateX(0);
+      }
+      50% {
+        transform: scale(0.3) translateX(0);
+      }
+      100% {
+        transform: scale(1) translateX(-200%);
+      }
+    }
+    @keyframes fadeInText {
+      0%{
+        opacity: 0;
+      }
+      100%{
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="logo"></div>
+  <div id="text">hello</div>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Logo Animation</title>
+  <style>
+    body {
+      background-color: black;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      overflow: hidden; /* Hide horizontal scrollbar during animation */
+    }
+
+    #animation-container {
+      position: relative;
+    }
+
+    #logo {
+      width: 100px;
+      height: 100px;
+      position:relative;
+      animation: zoomAndMove 7s ease-in-out forwards;
+    }
+
+    #text {
+      color: whitesmoke;
+      position:relative;
+      left: 10px; /* Adjust the distance from the final position of the logo */
+      top: 20%;
+      transform: translateY(-50%);
+      opacity: 0;
+      font-size: 20px;
+      font-family: pokemon hollow;
+      @font-face {
+        font-family:pokemon hollow;
+        src: url(C:\Users\ADMIN\Documents\tk web\Pokemon Hollow.ttf);
+      }
+      transition: opacity 0.5s ease-in-out;
+    }
+
+    #animation-container.show-text #text {
+      left: 10px; /* Adjust the distance from the final position of the logo */
+      opacity: 1;
+    }
+
+    @keyframes zoomAndMove {
+      0% {
+        transform: scale(0.5) translateY(0);
+      }
+      50% {
+        transform: scale(0.2) translateY(10%);
+      }
+      100% {
+        transform: scale(0.5) translateX(-220%);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="animation-container">
+    <div id="logo">
+      <img src="image.png" alt="src">
+    </div>
+    <div id="text">pokemon</div>
+  </div>
+
+  <script>
+    // Wait for the logo animation to complete before showing the text
+    document.addEventListener('DOMContentLoaded', function() {
+      const animationContainer = document.getElementById('animation-container');
+      const logo = document.getElementById('logo');
+
+      logo.addEventListener('animationend', function() {
+        animationContainer.classList.add('show-text');
+      });
+    });
+  </script>
+</body>
+</html>
+
+
+
